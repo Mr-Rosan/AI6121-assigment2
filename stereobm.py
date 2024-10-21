@@ -69,14 +69,14 @@ def compute_disparity_and_sobel(left_image_path, right_image_path, output_dir,
     # 对左右视差图分别应用Sobel算子
     
 # 示例使用
-left_image_name = "corridorl.jpg"
-right_image_name = "corridorr.jpg"
+left_image_name = "triclopsi2l.jpg"
+right_image_name = "triclopsi2r.jpg"
 output_dir = "outputs"
 compute_disparity_and_sobel(
     left_image_path=os.path.join("Assignment02 Disparity and Depth", left_image_name),
     right_image_path=os.path.join("Assignment02 Disparity and Depth", right_image_name),
     output_dir=output_dir,
-    image_name="corridor",
+    image_name="triclopsi2",
     method="bm",
     num_disparities=16,
     block_size=15
